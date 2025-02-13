@@ -22,7 +22,6 @@ Mihailov Piotr I2302
    ```php
    <?php
    echo "Привет, мир!";
-   ?>
    ```
 3. Запустил сервер командой `php -S localhost:8000`.
 ## Запуск с терминала
@@ -34,7 +33,6 @@ Mihailov Piotr I2302
 <?php
 echo "Hello, World with echo!<br>";
 print "Hello, World with print!<br>";
-?>
 ```
 
 ### Шаг 5: Работа с переменными
@@ -46,8 +44,7 @@ $message = "Все возвращаются на работу!";
 
 echo "Ещё " . $days . " дней. " . $message . "<br>";
 
-echo "Ещё $days дней. $message<br>";
-?>
+echo "Ещё {$days} дней. $message<br>";
 ```
 ## Вывод программы
 ```
