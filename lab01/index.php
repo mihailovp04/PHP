@@ -8,6 +8,6 @@ $message = "Все возвращаются на работу!";
 
 echo "Ещё " . $days . " дней. " . $message . "<br>";
 
-echo "Ещё $days дней. $message<br>";
+echo "Ещё {$days} дней. $message<br>";
 
 ?>
