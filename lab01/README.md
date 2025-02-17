@@ -23,7 +23,7 @@ Mihailov Piotr I2302
    <?php
    echo "Привет, мир!";
    ```
-3. Запустил сервер командой `php -S localhost:8000`.
+3. Запустил сервер командой `php -S localhost:8080`.
 ## Запуск с терминала
 ![Запуск терминала](images/terminal.png)
 
