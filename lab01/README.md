@@ -28,11 +28,14 @@ Mihailov Piotr I2302
    ```php
    <?php
    echo "Привет, мир!";
-   ?>
    ```
+<<<<<<< HEAD
 
 3. Запустил сервер командой `php -S localhost:8000`.
 
+=======
+3. Запустил сервер командой `php -S localhost:8080`.
+>>>>>>> ba6653982dab9ee51effd0d19dec951b4273dbb8
 ## Запуск с терминала
 
 ![Запуск терминала](images/terminal.png)
@@ -45,7 +48,6 @@ Mihailov Piotr I2302
 <?php
 echo "Hello, World with echo!<br>";
 print "Hello, World with print!<br>";
-?>
 ```
 
 ### Шаг 5: Работа с переменными
@@ -59,8 +61,7 @@ $message = "Все возвращаются на работу!";
 
 echo "Ещё " . $days . " дней. " . $message . "<br>";
 
-echo "Ещё $days дней. $message<br>";
-?>
+echo "Ещё {$days} дней. $message<br>";
 ```
 
 ## Вывод программы
@@ -91,7 +92,6 @@ Hello, World with print!
 1. **Какие способы установки PHP существуют?**
    - Ручная установка с официального сайта PHP.
    - Установка через XAMPP.
-   
 
 2. **Как проверить, что PHP установлен?**
    - Выполнить команду `php -v`.
@@ -100,7 +100,8 @@ Hello, World with print!
 3. **Чем отличается `echo` от `print`?**
    - `echo` быстрее, так как не возвращает значение.
    - `print` возвращает `1`, поэтому может использоваться в выражениях.
-   ## Библиография
+
+## Библиография
 1. Документация PHP: https://www.php.net/docs.php
 2. Руководство по установке PHP: https://www.php.net/manual/ru/install.php
 3. Официальный сайт XAMPP: https://www.apachefriends.org
