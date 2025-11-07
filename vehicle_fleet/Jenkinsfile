@@ -1,0 +1,35 @@
+pipeline {
+    agent {
+        label 'php-agent'
+    }
+    
+    stages {        
+        stage('Install Dependencies') {
+            steps {
+                echo 'Подготовка проекта...'
+                // если используешь composer, можно добавить:
+                // sh 'composer install'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Запуск тестов...'
+                // пример:
+                // sh './vendor/bin/phpunit'
+            }
+        }
+    }
+    
+    post {
+        always {
+            echo 'Конвейер завершен.'
+        }
+        success {
+            echo 'Все этапы прошли успешно!'
+        }
+        failure {
+            echo 'Обнаружены ошибки в конвейере.'
+        }
+    }
+}
